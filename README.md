@@ -1,4 +1,6 @@
-# first-kot
+# Student Grade calculator
+
+This is a Kotlin app made to take in student's grade though the import of an excel file, read the student name, mark(that is Continue Assesment and Exam marks) the solve for the grade of each students and export an excel file with students names and grades.
 
 Minimal Android Kotlin starter template for coding and debugging on a physical Android device.
 
