@@ -1,0 +1,45 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Android: assembleDebug",
+      "type": "shell",
+      "command": ".\\gradlew.bat",
+      "args": ["assembleDebug"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Android: installDebug",
+      "type": "shell",
+      "command": ".\\gradlew.bat",
+      "args": ["installDebug"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Android: start debug app",
+      "type": "shell",
+      "command": "adb",
+      "args": [
+        "shell",
+        "am",
+        "start",
+        "-D",
+        "-n",
+        "com.example.firstkot/.MainActivity"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Android: forward jdwp 8700",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "$pid=(adb shell pidof -s com.example.firstkot).Trim(); if(-not $pid){ throw 'App process not found. Start the app first.' }; adb forward tcp:8700 jdwp:$pid"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Set-Location "c:\Users\Nah Nah Sylvestre\Documents\Projects\Kotlin\first kot"; .\gradlew.bat installDebug
+
+Set-Location "c:\Users\Nah Nah Sylvestre\Documents\Projects\Kotlin\first kot"; gradle wrapper
+
+PS C:\Users\Nah Nah Sylvestre\AppData\Local\Android\Sdk\emulator> ./emulator -avd Medium_Phone_API_36.1
