@@ -48,3 +48,9 @@ Or command line:
 2. Start launch config `Android: Attach JVM (port 8700)`
 
 This attaches the Java debugger to the app process via JDWP forwarding.
+
+## BY
+
+```powershell
+ NAH NAH SYLVESTRE
+ ICTU20233743
